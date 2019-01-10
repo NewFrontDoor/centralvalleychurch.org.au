@@ -71,6 +71,7 @@ class ContactUs extends Component {
       <section>
 
         <div id="block-block-54" className="block block-block">
+          <em>The below form is currently placeholder only.</em><br /><br />
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
             <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
