@@ -44,7 +44,8 @@ class UpcomingEvents extends Component {
   render() {
 
 
-    var upcomingEvents = <div>Loading, please wait...</div>;
+    //var upcomingEvents = <div>Loading, please wait...</div>;
+    var upcomingEvents = <div>Currently unavailable.</div>;
     if (this.state.events) {
       upcomingEvents = _.map(this.state.events, (event) => {
         return (
@@ -53,11 +54,11 @@ class UpcomingEvents extends Component {
       });
     }
 
-    var upcomingEvents = _.map(placeholderEvents, (event) => {
+    /*var upcomingEvents = _.map(placeholderEvents, (event) => {
       return (
         <UpcomingEvent title={event.title} startdate={event.startdate} />
       )
-    });
+    });*/
 
     return (
       <section>
@@ -71,7 +72,7 @@ class UpcomingEvents extends Component {
               <div className="upcoming-events">
                 {upcomingEvents}
               </div>
-              <p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>
+              {/*<p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>*/}
             </div>
           </div>
         </div>
