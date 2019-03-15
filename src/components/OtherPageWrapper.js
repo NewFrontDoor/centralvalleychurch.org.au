@@ -8,12 +8,21 @@ import AllSermons from './pages/AllSermons';
 import Sermons from './pages/Sermons';
 import SermonPage from './pages/SermonPage';
 import SermonSeriesPage from './pages/SermonSeriesPage';
+import GospelCommunities from './pages/GetInvolved/GospelCommunities';
 
 
 import OurPeople from './pages/OurPeople';
 
 
 import ContactUs from './pages/ContactUs';
+import PrayerMeetings from './pages/GetInvolved/PrayerMeetings';
+import MainlyMusic from './pages/GetInvolved/MainlyMusic';
+import LifeCourse from './pages/GetInvolved/LifeCourse';
+import Vision from './pages/AboutUs/Vision';
+import Team from './pages/AboutUs/Team';
+import Mission from './pages/AboutUs/Mission';
+import WhatWeBelieve from './pages/AboutUs/WhatWeBelieve';
+import VisitUs from './pages/VisitUs';
 
 
 class OtherPageWrapper extends Component {
@@ -31,6 +40,18 @@ class OtherPageWrapper extends Component {
           <Route exact path="/OurPeople" component={OurPeople} />
           <Route exact path="/ContactUs" component={ContactUs} />
 
+
+          <Route exact path="/VisitUs" component={VisitUs} />
+
+          <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
+          <Route exact path="/MainlyMusic" component={MainlyMusic} />
+          <Route exact path="/LifeCourse" component={LifeCourse} />
+
+          <Route exact path="/Vision" component={Vision} />
+          <Route exact path="/Team" component={Team} />
+          <Route exact path="/Mission" component={Mission} />
+          <Route exact path="/WhatWeBelieve" component={WhatWeBelieve} />
+
           <Route path="/*" component={OtherPageContent} />
         </Switch>
       </section>
@@ -39,3 +60,5 @@ class OtherPageWrapper extends Component {
 }
 
 export default OtherPageWrapper;
+
+

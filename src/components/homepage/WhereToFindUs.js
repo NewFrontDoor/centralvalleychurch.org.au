@@ -13,9 +13,10 @@ class WhereToFindUs extends Component {
               <h2 >Where to Find Us</h2>
               <div className="content">
                 <GoogleMap id="map_canvas" height="360px" />
-                <div><a href="https://goo.gl/maps/AC9PsuiauJG2">Central Valley Church</a></div>
-                <div>Address TBC</div>
-                <div>Ripley, Queensland</div>  </div>
+                <div><a href="https://goo.gl/maps/FeVsdrjwrCC2">Central Valley Church</a></div>
+                <div>Minka Place, 20 Main Street</div>
+                <div>Ripley, QLD 4036</div>
+              </div>
             </div>
           </div>
         </div>

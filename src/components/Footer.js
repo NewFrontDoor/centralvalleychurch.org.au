@@ -20,7 +20,7 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://goo.gl/maps/AC9PsuiauJG2">Central Valley Church</a><br />Ripley, Queensland</p>
+                        <p><a href="https://goo.gl/maps/FeVsdrjwrCC2">Central Valley Church</a><br />Minka Place, 20 Main Street<br />Ripley, Queensland</p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}

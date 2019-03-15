@@ -69,15 +69,24 @@ class Navigation extends Component {
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" >Growth Groups</a>
+                                          <a href="/GospelCommunities" >Gospel Communities</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" >Prayer Meetings</a>
+                                          <a href="/PrayerMeetings" >Prayer Meetings</a>
                                         </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div className="tb-megamenu-column span3  mega-col-nav">
+                                    <div className="tb-megamenu-column-inner mega-inner clearfix">
+                                      <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" >Youth</a>
+                                          <a href="/MainlyMusic" >Mainly Music</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/LifeCourse" >Life Course</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -120,19 +129,38 @@ class Navigation extends Component {
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" title="Welcome">Welcome</a>
+                                          <a href="/Welcome" title="Welcome">Welcome</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" >Vision</a>
+                                          <a href="/Vision" >Vision</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/" >What We Believe</a>
+                                          <a href="/Mission" >Mission</a>
                                         </li>
                                       </ul>
                                     </div>
                                   </div>
+
+                                  <div className="tb-megamenu-column span3  mega-col-nav">
+                                    <div className="tb-megamenu-column-inner mega-inner clearfix">
+                                      <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <span>&nbsp;</span>
+                                        </li>
+
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WhatWeBelieve" title="Welcome">What We Believe</a>
+                                        </li>
+
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Team" >Team</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
                                 </div>
                               </div>
                             </div>

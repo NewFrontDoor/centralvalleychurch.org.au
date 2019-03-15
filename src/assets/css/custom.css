@@ -58,17 +58,39 @@
 
 
 
-@media (max-width: 767px) {
-  
-/*    .nestor-main-menu .navbar-toggle {
-      border: 1px solid #2588c9 !important;
-      background: #91c2e3 !important;
-      color: #000 !important;
-    }*/
-    .nav-collapse{
-      margin-top: -55px !important;
-    }
+  /*Mobile menu colour*/
+  .nestor-main-menu .navbar-toggle{
+    border: 1px solid #c79f6e !important;
+    background: #c79f6e !important;
+    color: #fff !important;
+}
 
+.navbar-header{
+text-align: center;
+width:100%;
+}
+@media (min-width:768px) and (max-width:979px){
+.navbar-toggle{
+  display: inline-block;
+  width: 250px;
+  border-radius: 0;
+  padding: 12px;
+  float: none;   
+}
+.nav-collapse{
+  margin-top: -55px !important;
+}
+}
+
+@media (max-width: 767px) {
+  .nestor-main-menu .navbar-toggle {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .nav-collapse{
+    margin-top: -55px !important;
+  }
 }
 
   /*Styling for sermon load more and search*/
@@ -78,24 +100,25 @@
 
 
   /*Change btn border color to fit theme*/
-  /*
+  
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    border-color: #2588c9 !important;
-    background-color: #2588c9 !important;
+    border-color: #c79f6e !important;
+    background-color: #c79f6e !important;
   }
   
   .btn-primary{
-    border-color: #2588c9;
-  }*/
+    border-color: #c79f6e;
+  }
 
 
 
 
 /* Site Text color if desired to be black*/
-/*
-body{
+
+/*body{
   color: #000;
 }*/
+
 
 
 
