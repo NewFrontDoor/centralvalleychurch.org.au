@@ -34,7 +34,7 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-mail text-center">
                         <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
-                        <p><a href="mailto:">Contact Email</a><br /></p>
+                        <p><a href="mailto:info@centralvalleychurch.org.au">info@centralvalleychurch.org.au</a><br /></p>
                       </div> {/* /footer-mail */}  </div>
                   </div>  </div>
               </div> {/* /footer-second-column-region */}
