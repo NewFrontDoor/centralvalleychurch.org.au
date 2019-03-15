@@ -119,6 +119,8 @@ class ContactUs extends Component {
                 <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
+                    <span className="delimiter">›</span>
+                    <span title="" className="nolink">Contact Us</span>
                   </div>
                 </div>
               </div>
@@ -148,16 +150,16 @@ class ContactUs extends Component {
 
                         <div class="col-xs-12 col-sm-6">
                           <h5>Address</h5>
-                          <p>Come visit us on Sundays @ Xam:</p>
+                          <p>Come visit us on Sundays @ 10am:</p>
                           <p>Central Valley Church<br />
-                            Street Address<br />
+                            Minka Place, 20 Main Street<br />
                             Ripley, Queensland</p>
                         </div>
 
                         <div class="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">/centralvalleychurchripley</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:">Contact Email</a></p>
+                            <b>Email:</b>&nbsp;<a href="mailto:info@centralvalleychurch.org.au">info@centralvalleychurch.org.au</a></p>
                         </div>
 
                       </div>

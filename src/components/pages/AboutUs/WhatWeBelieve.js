@@ -88,9 +88,11 @@ class Vision extends Component {
                                                     <p>
                                                         Genuine commitment to Jesus Christ manifests in obedience to his word and a character in keeping with the internal work of the Holy Spirit. Such a person lives by the Spirit and wants his or her life to be completely to the glory of God (Scripture References: Luke 9:23-24; Romans 8:5; Romans 12:1-2; 1 John 2: 3; 1 John 5:3).
                                                     </p>
-
+                                                    <br />
                                                     <p>
-                                                        NOTE: Central Church and Central Valley Church are members of the Presbyterian Church of Queensland. If you want to find out more go to <a href="http://www.pcq.org.au" target="_blank" rel="noopener noreferrer">www.pcq.org.au</a>
+                                                        <em>
+                                                            NOTE: Central Church and Central Valley Church are members of the Presbyterian Church of Queensland. If you want to find out more go to <a href="http://www.pcq.org.au" target="_blank" rel="noopener noreferrer">www.pcq.org.au</a>
+                                                        </em>
                                                     </p>
 
 

@@ -23,6 +23,7 @@ import Team from './pages/AboutUs/Team';
 import Mission from './pages/AboutUs/Mission';
 import WhatWeBelieve from './pages/AboutUs/WhatWeBelieve';
 import VisitUs from './pages/VisitUs';
+import WelcomeAbout from './pages/AboutUs/WelcomeAbout';
 
 
 class OtherPageWrapper extends Component {
@@ -44,9 +45,11 @@ class OtherPageWrapper extends Component {
           <Route exact path="/VisitUs" component={VisitUs} />
 
           <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
+          <Route exact path="/GospelCommunities" component={GospelCommunities} />
           <Route exact path="/MainlyMusic" component={MainlyMusic} />
           <Route exact path="/LifeCourse" component={LifeCourse} />
 
+          <Route exact path="/Welcome" component={WelcomeAbout} />
           <Route exact path="/Vision" component={Vision} />
           <Route exact path="/Team" component={Team} />
           <Route exact path="/Mission" component={Mission} />
