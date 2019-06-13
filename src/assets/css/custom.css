@@ -120,5 +120,23 @@ width:100%;
 }*/
 
 
+.header-img>img {
+    display: block;
+}
+
+.header-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.header-img-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
 
 
