@@ -76,7 +76,7 @@ class Sermons extends Component {
           <a href={'/series/' + this.state.latestSermon.series_id}><img src={this.state.latestSermon.series_img} width="600" height="450" alt="" /></a>
         </div>  </div>
         <div className="views-field views-field-title">
-          <span className="field-content"><a href={'/series/' + this.state.latestSermon.series_id}>{this.state.latestSermon.sermonseries}</a></span>  </div></section>)
+          <span className="field-content"><a href={'/series/' + this.state.latestSermon.series_id}>{decode(this.state.latestSermon.sermonseries)}</a></span>  </div></section>)
     }
 
     return (

@@ -25,8 +25,8 @@ class LatestSermon extends Component {
   render() {
 
     if (!this.state.latestSermon) {
-      //var sermonDetails = <div>Loading, please wait.</div>
-      var sermonDetails = <div>Currently unavailable.</div>
+      var sermonDetails = <i className="fa fa-spinner"></i>
+      //var sermonDetails = <div>Currently unavailable.</div>
     }
     else {
       var sermonDetails = _.map(this.state.latestSermon, (sermon) => {
@@ -72,6 +72,7 @@ class LatestSermon extends Component {
           <div className="block block-views">
             <h2 className="header-lightBlue">Latest Sermon</h2>
             {sermonDetails}
+            Currently unavailable.
           </div>
         </div>
         </div>
