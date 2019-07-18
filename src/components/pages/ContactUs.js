@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import headerImg from '../../assets/img/Contact Us.png'
 import validator from 'validator';
 
-//import { postToWebform } from '../../utils/postToAPI';
+import { postToWebform } from '../../utils/postToAPI';
 
 class ContactUs extends Component {
   constructor() {
@@ -46,21 +46,20 @@ class ContactUs extends Component {
     }
     else {
       this.setState({ formValid: true });
-      console.log(this.state);
       /*handle posting to drupal and show success message*/
       //strip 4byte utf8 characters / emojis with .replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, '')
       var form = new FormData();
-      form.append("webform", "drupal-webform-uuid");
+      form.append("webform", "5058461b-ce87-480f-b9e3-bea8808746b6");
       form.append("submission[data][1][values][0]", this.state.name.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][2][values][0]", this.state.email.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][3][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][4][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      /*
+      form.append("submission[data][3][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+      form.append("submission[data][4][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+      
       var that = this;
       postToWebform(form, function (data) {
         that.setState({ submissionID: data.sid })
         that.setState({ formSubmitted: true })
-      })*/
+      })
     }
 
   }
@@ -71,7 +70,6 @@ class ContactUs extends Component {
       <section>
 
         <div id="block-block-54" className="block block-block">
-          <em>The below form is currently placeholder only.</em><br /><br />
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
             <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
@@ -120,22 +118,22 @@ class ContactUs extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12 col-md-8 col-md-offset-2">
 
-                <div id="block-block-54" class="block block-block">
+                <div id="block-block-54" className="block block-block">
 
 
-                  <div class="content">
+                  <div className="content">
                     If you have any questions about Central Valley Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
                 </div>
 
 
-                <div id="block-block-45" class="block block-block">
+                <div id="block-block-45" className="block block-block">
 
 
-                  <div class="content">
-                    <div class="contacts">
-                      <div class="row">
+                  <div className="content">
+                    <div className="contacts">
+                      <div className="row">
 
-                        <div class="col-xs-12 col-sm-6">
+                        <div className="col-xs-12 col-sm-6">
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 10am:</p>
                           <p>Central Valley Church<br />
@@ -143,7 +141,7 @@ class ContactUs extends Component {
                             Ripley, Queensland</p>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 margin-top-xs-40">
+                        <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">/centralvalleychurchripley</a><br />
                             <b>Email:</b>&nbsp;<a href="mailto:info@centralvalleychurch.org.au">info@centralvalleychurch.org.au</a></p>
