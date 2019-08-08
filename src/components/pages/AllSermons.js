@@ -141,7 +141,7 @@ class Sermons extends Component {
   render() {
     if (!this.state.sermons) {
       //var sermons = <tr><td>Loading, please wait.</td></tr>;
-      var sermons = <tr><td>Currently unavailable.</td></tr>;
+      var sermons = <tr><td><i className="fa fa-spinner"></i></td></tr>;
     }
     else {
       var tdPadding = { padding: "0px 5px 0px 5px" };

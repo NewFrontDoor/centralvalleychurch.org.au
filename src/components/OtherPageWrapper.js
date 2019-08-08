@@ -23,7 +23,9 @@ import Team from './pages/AboutUs/Team';
 import Mission from './pages/AboutUs/Mission';
 import WhatWeBelieve from './pages/AboutUs/WhatWeBelieve';
 import VisitUs from './pages/VisitUs';
-import WelcomeAbout from './pages/AboutUs/WelcomeAbout';
+import WelcomeAbout from './pages/ImNew/WelcomeAbout';
+import WhoIsJesus from './pages/ImNew/WhoIsJesus';
+import WhyCome from './pages/ImNew/WhyCome';
 
 
 class OtherPageWrapper extends Component {
@@ -54,6 +56,9 @@ class OtherPageWrapper extends Component {
           <Route exact path="/Team" component={Team} />
           <Route exact path="/Mission" component={Mission} />
           <Route exact path="/WhatWeBelieve" component={WhatWeBelieve} />
+
+          <Route exact path="/WhoIsJesus" component={WhoIsJesus} />
+          <Route exact path="/WhyCome" component={WhyCome} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

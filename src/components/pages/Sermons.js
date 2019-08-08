@@ -33,12 +33,9 @@ class Sermons extends Component {
   render() {
 
     if (!this.state.sermons || !this.state.latestSermon || !this.state.recentSeries) {
-      { /*var recentSeries = <div>Loading, please wait.</div>
+      var recentSeries = <div>Loading, please wait.</div>
       var currentSeries = <div>Loading, please wait.</div>
-      var latestSermon = <div>Loading, please wait.</div>*/}
-      var recentSeries = <div>Currently unavailable.</div>;
-      var currentSeries = <div>Currently unavailable.</div>;
-      var latestSermon = <div>Currently unavailable.</div>;
+      var latestSermon = <div>Loading, please wait.</div>
     }
     else {
       var recentSeries = _.map(this.state.recentSeries, (series) => {

@@ -37,6 +37,50 @@ class Navigation extends Component {
                     <div className="tb-megamenu tb-megamenu-main-menu">
                       <div className="nav-collapse  always-show">
                         <ul className="tb-megamenu-nav nav level-0 items-5">
+                        <li className="tb-megamenu-item level-1 mega dropdown">
+                            <a href="javascript:void(0);" className="dropdown-toggle" title="I'm New">
+
+                              I'm New         <span className="caret"></span>
+                            </a>
+                            <div style={{ width: "750px" }} className="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                              <div className="mega-dropdown-inner">
+                                <div className="tb-megamenu-row row-fluid">
+                                  <div className="tb-megamenu-column span3  mega-col-nav">
+                                    <div className="tb-megamenu-column-inner mega-inner clearfix">
+                                      <div className="tb-megamenu-block tb-block tb-megamenu-block">
+                                        <div className="block-inner">
+
+                                          <div className="block block-block">
+
+
+                                            <div className="content">
+                                              <h3>Welcome!</h3>  </div>
+                                          </div>  </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div className="tb-megamenu-column span3  mega-col-nav">
+                                    <div className="tb-megamenu-column-inner mega-inner clearfix">
+                                      <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
+
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Welcome" >Welcome</a>
+                                        </li>
+
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WhoIsJesus" >Who is Jesus?</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/WhyCome" >Why Come?</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/VisitUs" >Visit Us</a>
                           </li>
@@ -83,7 +127,7 @@ class Navigation extends Component {
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/MainlyMusic" >Mainly Music</a>
+                                          <a href="/mainlymusic" >mainly music</a>
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/LifeCourse" >Life Course</a>
@@ -126,10 +170,6 @@ class Navigation extends Component {
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="#" title="About">About</a>
-                                        </li>
-
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Welcome" title="Welcome">Welcome</a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
