@@ -26,6 +26,7 @@ import VisitUs from './pages/VisitUs';
 import WelcomeAbout from './pages/ImNew/WelcomeAbout';
 import WhoIsJesus from './pages/ImNew/WhoIsJesus';
 import WhyCome from './pages/ImNew/WhyCome';
+import GenericAPIPage from './pages/GenericAPIPage';
 
 
 class OtherPageWrapper extends Component {
@@ -48,7 +49,6 @@ class OtherPageWrapper extends Component {
 
           <Route exact path="/PrayerMeetings" component={PrayerMeetings} />
           <Route exact path="/GospelCommunities" component={GospelCommunities} />
-          <Route exact path="/MainlyMusic" component={MainlyMusic} />
           <Route exact path="/LifeCourse" component={LifeCourse} />
 
           <Route exact path="/Welcome" component={WelcomeAbout} />
@@ -59,7 +59,8 @@ class OtherPageWrapper extends Component {
 
           <Route exact path="/WhoIsJesus" component={WhoIsJesus} />
           <Route exact path="/WhyCome" component={WhyCome} />
-
+          
+          <Route exact path="/:slug" component={GenericAPIPage} />
           <Route path="/*" component={OtherPageContent} />
         </Switch>
       </section>
