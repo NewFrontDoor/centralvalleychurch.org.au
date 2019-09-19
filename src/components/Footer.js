@@ -10,7 +10,6 @@ class Footer extends Component {
         <div id="footer-columns-region" className="footer-columns region-30 block-30 bg-color-grayDark2 text-color-light">
           <div className="container">
             <div className="row">
-
               <div id="footer-first-column-region" className="footer-first-column col-xs-12 col-md-4">
                 <div className="region region-footer-first-column">
 
@@ -20,7 +19,7 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://goo.gl/maps/FeVsdrjwrCC2" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Minka Place, 20 Main Street<br />Ripley, Queensland</p>
+                        <p><a href="https://goo.gl/maps/FeVsdrjwrCC2" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Sundays 10am<br/>Minka Place, 20 Main Street<br />Ripley, Queensland</p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}
@@ -47,8 +46,11 @@ class Footer extends Component {
 
                     <div className="content">
                       <div className="footer-phone text-center">
-                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">facebook.com/centralvalleychurchripley</a><br /></p>
+                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i><i style={{marginLeft: "10px"}} className="size-32 ionicons ion-social-instagram-outline"></i>
+                        <p>
+                            <a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">facebook.com/centralvalleychurchripley</a><br />
+                            <a href="https://www.instagram.com/centralvalleychurch/" target="_blank" rel="noreferrer noopener">instagram.com/centralvalleychurch</a>
+                        </p>
                       </div>  </div>
                   </div>  </div>
               </div> {/* /footer-third-column-region */}
