@@ -118,3 +118,7 @@ width:100%;
 /*body{
   color: #000;
 }*/
+
+.breadcrumbs>p{
+  line-height: 2.1em;
+}
