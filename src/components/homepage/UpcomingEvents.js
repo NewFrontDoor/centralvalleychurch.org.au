@@ -2,31 +2,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { decode } from 'he';
-import UpcomingEvent from '../models/UpcomingEvent'
 
-//import { getFromDrupalAPI } from '../../utils/fetchJSON';
-const placeholderEvents = [
-  {
-    "title": "Sunday Service",
-    "startdate": "Sunday, x Month, YYYY 9:30AM"
-  },
-  {
-    "title": "Wednesday Event",
-    "startdate": "Wednesday, x Month, YYYY 9:30AM"
-  },
-  {
-    "title": "Thursday Event",
-    "startdate": "Friday, x Month, YYYY 9:30AM"
-  },
-  {
-    "title": "Friday Event",
-    "startdate": "Saturday, x Month, YYYY 9:30AM"
-  },
-  {
-    "title": "Saturday Event",
-    "startdate": "Saturday, x Month, YYYY 9:30PM"
-  }
-];
+import { getFromDrupalAPI } from '../../utils/fetchJSON';
+
 
 class UpcomingEvents extends Component {
   constructor(props) {
@@ -34,31 +12,30 @@ class UpcomingEvents extends Component {
     this.state = { events: null }
   }
 
-  /*componentWillMount() {
+  componentWillMount() {
     var that = this;
     getFromDrupalAPI('upcoming_events_api', function (data) {
       that.setState({ events: data })
     });
-  }*/
-
+  }
   render() {
 
-
-    //var upcomingEvents = <div>Loading, please wait...</div>;
-    var upcomingEvents = <div>Currently unavailable.</div>;
-    if (this.state.events) {
+    var upcomingEvents = <div>Loading, please wait...</div>;
+    if (this.state.events && this.state.events.length > 0) {
       upcomingEvents = _.map(this.state.events, (event) => {
         return (
-          <UpcomingEvent title={event.title} startdate={event.startdate} />
+          <div key={_.uniqueId()} className="upcoming-event">
+            <div><i className="icon ion-calendar upcoming-event-icon" /></div>
+            <div className="upcoming-event-title">{decode(event.title)}</div>
+            <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
+          </div>
         )
       });
     }
 
-    /*var upcomingEvents = _.map(placeholderEvents, (event) => {
-      return (
-        <UpcomingEvent title={event.title} startdate={event.startdate} />
-      )
-    });*/
+  else if (this.state.events){
+    upcomingEvents = <span>No upcoming events to display</span>
+  }
 
     return (
       <section>
@@ -66,13 +43,13 @@ class UpcomingEvents extends Component {
 
           <div className="block block-block">
 
-            <h2 className="header">Upcoming Events</h2>
+            <h2 className="header-lightBlue">Upcoming Events</h2>
 
             <div className="content">
               <div className="upcoming-events">
                 {upcomingEvents}
               </div>
-              {/*<p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>*/}
+              <p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>
             </div>
           </div>
         </div>

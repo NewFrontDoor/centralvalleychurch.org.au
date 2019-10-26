@@ -47,11 +47,17 @@ class GenericAPIPage extends Component {
         }
         else if (this.state.pages !== null) {
             //no page
-            content = <p>Page could not be found.</p>
-            pageHeader = (<div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
+            content = <p>Sorry this page is still under construction or does not exist.</p>
+            pageHeader = (<React.Fragment><div id="top-content-left-region" className="padding-top-15 padding-bottom-15 top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
                     <h1>Page not found</h1>
-                </div></div>)
+                </div>
+                </div>
+                <div id="top-content-right-region" className=" padding-top-15 top-content-right col-xs-12 col-md-6 text-right text-center-sm">
+                <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
+                    <div className="breadcrumbs"><a href="/">Home</a></div>
+                </div>
+            </div></React.Fragment>)
             console.log(this.state);
         }
         else {

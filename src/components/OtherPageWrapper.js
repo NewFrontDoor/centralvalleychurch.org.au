@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; //eslint-disable-line
 
-import OtherPageContent from './OtherPageContent';
-
 import AllSermons from './pages/AllSermons';
 import Sermons from './pages/Sermons';
 import SermonPage from './pages/SermonPage';
@@ -14,6 +12,7 @@ import SermonSeriesPage from './pages/SermonSeriesPage';
 import ContactUs from './pages/ContactUs';
 
 import GenericAPIPage from './pages/GenericAPIPage';
+import Events from './pages/Events';
 
 
 class OtherPageWrapper extends Component {
@@ -29,10 +28,9 @@ class OtherPageWrapper extends Component {
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
 
           <Route exact path="/ContactUs" component={ContactUs} />
+          <Route exact path="/Events" component={Events} />
 
           <Route exact path="/:slug" component={GenericAPIPage} />
-
-          <Route path="/*" component={OtherPageContent} />
         </Switch>
       </section>
     );

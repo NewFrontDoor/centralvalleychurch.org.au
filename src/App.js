@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import configuration from './config/config.js'; //eslint-disable-line
 import Navigation from './components/Navigation';
 import HomePageWrapper from './components/homepage/HomePageWrapper';
 import OtherPageWrapper from './components/OtherPageWrapper';
