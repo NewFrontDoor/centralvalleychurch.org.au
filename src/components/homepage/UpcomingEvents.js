@@ -24,18 +24,25 @@ class UpcomingEvents extends Component {
     if (this.state.events && this.state.events.length > 0) {
       upcomingEvents = _.map(this.state.events, (event) => {
         return (
-          <div key={_.uniqueId()} className="upcoming-event">
-            <div><i className="icon ion-calendar upcoming-event-icon" /></div>
-            <div className="upcoming-event-title">{decode(event.title)}</div>
-            <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
-          </div>
+          <React.Fragment>
+            {event.url ? <a href={event.url} rel="noreferrer noopener"><div key={_.uniqueId()} className="upcoming-event">
+              <div><i className="icon ion-calendar upcoming-event-icon" /></div>
+              <div className="upcoming-event-title">{decode(event.title)}</div>
+              <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
+            </div></a> : <div key={_.uniqueId()} className="upcoming-event">
+                <div><i className="icon ion-calendar upcoming-event-icon" /></div>
+                <div className="upcoming-event-title">{decode(event.title)}</div>
+                <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
+              </div>}
+          </React.Fragment>
+
         )
       });
     }
 
-  else if (this.state.events){
-    upcomingEvents = <span>No upcoming events to display</span>
-  }
+    else if (this.state.events) {
+      upcomingEvents = <span>No upcoming events to display</span>
+    }
 
     return (
       <section>

@@ -7,7 +7,7 @@
     "@emotion/is-prop-valid": "^0.8.3",
     "@emotion/styled": "^10.0.22",
     "@emotion/styled-base": "^10.0.22",
-    "@newfrontdoor/calendar": "^1.4.8",
+    "@newfrontdoor/calendar": "^1.4.9",
     "ajv": "^6.0.0",
     "emotion-theming": "^10.0.19",
     "es6-promise": "^4.2.5",
