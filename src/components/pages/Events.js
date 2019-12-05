@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Calendar, { drupalClient } from '@newfrontdoor/calendar';
-import config from 'react-global-configuration';
+import Calendar from './CalendarWrapper';
 
-const client = drupalClient(config.get("DRUPAL_EVENTS"))
 
 class Events extends Component {
 
@@ -39,13 +37,8 @@ class Events extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-
-                          <Calendar
-                            client={client}
-                            initialView={'month'}
-                          />
+                          <Calendar/>
                         </div>
-
 
 
                       </div>
