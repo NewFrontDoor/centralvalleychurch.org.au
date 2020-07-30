@@ -137,8 +137,9 @@ class ContactUs extends Component {
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 10am:</p>
                           <p>Central Valley Church<br />
-                            Minka Place, 20 Main Street<br />
-                            Ripley, Queensland</p>
+                          Ripley Valley State Secondary College Hall<br/>
+                          Cnr Parkway Ave & Botany Drive<br/>
+                          South Ripley QLD 4306</p>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 margin-top-xs-40">

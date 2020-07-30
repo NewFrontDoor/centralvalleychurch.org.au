@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { getFrontPageImage } from '../../utils/fetchJSON'
 
-import slider1 from '../../assets/img/slider image.png';
+import slider1 from '../../assets/img/slider.jpg';
 
 
 const WithLink = ({ link, children }) => (link ?
