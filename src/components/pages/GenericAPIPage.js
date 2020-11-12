@@ -29,7 +29,7 @@ class GenericAPIPage extends Component {
         if (this.state.pages !== null && this.state.pages.length > 0) {
             //page exists
             page = this.state.pages[0];
-            pageHeader = page.header_image ? <img className="img img-responsive" src={page.header_image} alt="" ></img> : (
+            pageHeader = page.header_image[0] !== "" ? <img className="img img-responsive" src={page.header_image} alt="" ></img> : (
                 <section>
                     <div id="top-content-left-region" className="padding-top-15 padding-bottom-15 top-content-left col-xs-12 col-md-6 text-center-sm">
                         <div id="page-title-block" className="page-title block">
