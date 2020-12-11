@@ -47,7 +47,7 @@ class Slider extends Component {
           <div className="region region-highlighted-2">
             <div id="block-views-front-page-slider-block" className="block block-views">
               <div className="content">
-                {!this.state.loading ? <WithLink link={this.state.url}><img className="img-full-width img-responsive" src={this.state.image} alt="" /></WithLink> : <i className="fa fa-spinner"></i>}
+                {!this.state.loading ? <WithLink link={this.state.url} target="_blank"><img className="img-full-width img-responsive" src={this.state.image} alt="" /></WithLink> : <i className="fa fa-spinner"></i>}
               </div>
             </div>
           </div>
