@@ -30,10 +30,10 @@ class UpcomingEvents extends Component {
               <div className="upcoming-event-title">{decode(event.title)}</div>
               <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
             </div></a> : <div key={_.uniqueId()} className="upcoming-event">
-                <div><i className="icon ion-calendar upcoming-event-icon" /></div>
-                <div className="upcoming-event-title">{decode(event.title)}</div>
-                <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
-              </div>}
+              <div><i className="icon ion-calendar upcoming-event-icon" /></div>
+              <div className="upcoming-event-title">{decode(event.title)}</div>
+              <div className="upcoming-event-date">{event.dateonly === "true" ? event.startdate.slice(0, event.startdate.length - 7) : event.startdate}</div>
+            </div>}
           </React.Fragment>
 
         )
@@ -41,7 +41,7 @@ class UpcomingEvents extends Component {
     }
 
     else if (this.state.events) {
-      upcomingEvents = <span>No upcoming events to display</span>
+      upcomingEvents = <span>{/*No upcoming events to display*/}</span>
     }
 
     return (
@@ -50,13 +50,13 @@ class UpcomingEvents extends Component {
 
           <div className="block block-block">
 
-            <h2 className="header-lightBlue">Upcoming Events</h2>
+            <h2 className="header-lightBlue">Featured Events</h2>
 
             <div className="content">
               <div className="upcoming-events">
                 {upcomingEvents}
               </div>
-              <p>For a full list of our events, <a href="/Events" title="View full calendar">click here</a>.</p>
+              <p>For a full calendar of our upcoming events, <a href="/Events" title="View full calendar">click here</a>.</p>
             </div>
           </div>
         </div>

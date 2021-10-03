@@ -19,7 +19,7 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://goo.gl/maps/F7ziZdrxn8JC1FS9A" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Sundays 10am<br/>Ripley Valley State Secondary College Hall<br />Cnr Parkway Ave & Botany Drive<br/>South Ripley QLD 4306</p>
+                        <p><a href="https://goo.gl/maps/F7ziZdrxn8JC1FS9A" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Sundays 9.30am<br />Ripley Valley State Secondary College Hall<br />Cnr Parkway Ave & Botany Drive<br />South Ripley QLD 4306</p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}
@@ -46,10 +46,10 @@ class Footer extends Component {
 
                     <div className="content">
                       <div className="footer-phone text-center">
-                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i><i style={{marginLeft: "10px"}} className="size-32 ionicons ion-social-instagram-outline"></i>
+                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i><i style={{ marginLeft: "10px" }} className="size-32 ionicons ion-social-instagram-outline"></i>
                         <p>
-                            <a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">facebook.com/centralvalleychurchripley</a><br />
-                            <a href="https://www.instagram.com/centralvalleychurch/" target="_blank" rel="noreferrer noopener">instagram.com/centralvalleychurch</a>
+                          <a href="https://www.facebook.com/centralvalleychurchripley/" target="_blank" rel="noreferrer noopener">facebook.com/centralvalleychurchripley</a><br />
+                          <a href="https://www.instagram.com/centralvalleychurch/" target="_blank" rel="noreferrer noopener">instagram.com/centralvalleychurch</a>
                         </p>
                       </div>  </div>
                   </div>  </div>

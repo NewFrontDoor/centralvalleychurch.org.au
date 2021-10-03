@@ -14,7 +14,7 @@ class WhereToFindUs extends Component {
               <div className="content">
                 <GoogleMap id="map_canvas" height="360px" />
                 <div><a href="https://goo.gl/maps/F7ziZdrxn8JC1FS9A" target="_blank" rel="noopener noreferrer">Central Valley Church</a></div>
-                <div>Sundays 10am</div>
+                <div>Sundays 9.30am</div>
                 <div>Ripley Valley State Secondary College Hall</div>
                 <div>Cnr Parkway Ave & Botany Drive</div>
                 <div>South Ripley QLD 4306</div>

@@ -54,7 +54,7 @@ class ContactUs extends Component {
       form.append("submission[data][2][values][0]", this.state.email.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][3][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][4][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      
+
       var that = this;
       postToWebform(form, function (data) {
         that.setState({ submissionID: data.sid })
@@ -135,11 +135,11 @@ class ContactUs extends Component {
 
                         <div className="col-xs-12 col-sm-6">
                           <h5>Address</h5>
-                          <p>Come visit us on Sundays @ 10am:</p>
+                          <p>Come visit us on Sundays @ 9.30am:</p>
                           <p>Central Valley Church<br />
-                          Ripley Valley State Secondary College Hall<br/>
-                          Cnr Parkway Ave & Botany Drive<br/>
-                          South Ripley QLD 4306</p>
+                            Ripley Valley State Secondary College Hall<br />
+                            Cnr Parkway Ave & Botany Drive<br />
+                            South Ripley QLD 4306</p>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 margin-top-xs-40">
