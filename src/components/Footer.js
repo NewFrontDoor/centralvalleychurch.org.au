@@ -19,7 +19,7 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-address text-center">
                         <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://goo.gl/maps/F7ziZdrxn8JC1FS9A" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Sundays 9.30am<br />Ripley Valley State Secondary College Hall<br />Cnr Parkway Ave & Botany Drive<br />South Ripley QLD 4306</p>
+                        <p><a href="https://goo.gl/maps/F7ziZdrxn8JC1FS9A" target="_blank" rel="noopener noreferrer">Central Valley Church</a><br />Sundays 9.30am<br />Ripley Valley State Secondary College PAC Hall<br />18 Parkway Avenue<br />South Ripley QLD 4306</p>
                       </div> {/* /footer-address */}  </div>
                   </div>  </div>
               </div> {/* /footer-first-column-region */}

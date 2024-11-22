@@ -127,9 +127,6 @@ class Navigation extends Component {
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
 
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/mainlymusic" >mainly music</a>
-                                        </li>
-                                        <li className="tb-megamenu-item level-2 mega">
                                           <a href="/LifeCourse" >Life Course</a>
                                         </li>
                                       </ul>
