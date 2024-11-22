@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { getFrontPageImage } from '../../utils/fetchJSON'
 
-import slider1 from '../../assets/img/slider.jpg';
+import slider1 from '../../assets/img/central_valley_background.png';
 
 
 const WithLink = ({ link, children }) => (link ?
@@ -27,11 +27,14 @@ class Slider extends Component {
     getFrontPageImage(function (data) {
       if (data.length > 0) {
         var url = data[0].url;
+        console.log(url)
         if (url.indexOf('http') >= 0) {
           that.setState({ image: data[0].image, loading: false, url: url });
+
         }
-        else {
-          that.setState({ image: data[0].image, loading: false, url: null });
+        else{
+          that.setState({ image: slider1, loading: false, url: null }); // Currently this works but may need to think of a better way of doing it
+          
         }
       }
       else {
